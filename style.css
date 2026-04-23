@@ -90,7 +90,7 @@ nav {
   display: none;
   min-height: calc(100vh - 56px);
   padding: 5rem 2rem 3rem;
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -115,6 +115,80 @@ h2 {
   border: 2px dashed #bbb;
   text-align: center;
   margin-top: 1rem;
+}
+
+/* === UNIT SECTIONS === */
+.unit-blurb {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 1.8rem;
+  max-width: 780px;
+  line-height: 1.6;
+}
+
+.file-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.file-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.2rem;
+  background: var(--card-bg);
+  border: 3px solid var(--border);
+  box-shadow: var(--shadow);
+  text-decoration: none;
+  color: var(--fg);
+  transition: transform 0.12s, box-shadow 0.12s;
+}
+
+.file-card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 var(--border);
+}
+
+.file-card:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 var(--border);
+}
+
+.file-icon {
+  display: inline-block;
+  align-self: flex-start;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  padding: 0.3rem 0.6rem;
+  background: var(--accent);
+  color: var(--card-bg);
+  border: 2px solid var(--border);
+}
+
+.file-title {
+  font-weight: 800;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+
+.file-sub {
+  font-size: 0.85rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+.hero-intro {
+  font-size: 0.95rem;
+  color: #333;
+  margin-top: 1.2rem;
+  max-width: 520px;
+  line-height: 1.6;
 }
 
 /* === HERO === */
